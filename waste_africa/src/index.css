@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    transition: background-color 0.35s ease, color 0.35s ease;
+}
+
+:has(.dark) {
+    background-color: #0f172a;
+    color: #f8f9fa;
+}

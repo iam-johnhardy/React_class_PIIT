@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+body {
+	font-family: "Onest", sans-serif;
+}
+
+@theme {
+	--font-onest: "Onest", "sans-serif";
+}
