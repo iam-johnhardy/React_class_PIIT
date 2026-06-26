@@ -14,13 +14,16 @@ const ProductCard = ({
 }) => {
 	const [isEditing, setIsEditing] = useState(false);
 	const [formData, setFormData] = useState({
-		name,
+		image,
+        name,
 		description,
 		email,
 		phone_number,
 		is_open,
         
 	});
+
+    // Modal state
     // const[open, setOpen] = useState(false);
 
 	const handleChange = (field) => (event) => {
@@ -52,7 +55,7 @@ const ProductCard = ({
 		<div className="bg-white border border-gray-200 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300 w-full">
 			{/* Product Image */}
 			<div className="w-full h-56 bg-gray-100 overflow-hidden">
-				<img src={image} alt={name} className="w-full h-full object-cover" />
+				<img src={formData.image} alt={name} className="w-full h-full object-cover" />
 			</div>
 
 			{/* Card Content */}
@@ -114,13 +117,13 @@ const ProductCard = ({
 					</div>
                   {/*  Edit Form drop down */}
                   {/* Modals component for edit form */}
-                  {/* <Modals
+                   {/* <Modals
 			open={open}
 			onClose={() => {
 				setOpen(false);
 				setIsEditing(false);
 			}}
-		> */}
+		>  */}
 					{isEditing ? (
 						<div className="mt-4 space-y-4 bg-gray-50 border border-gray-200 rounded-xl p-4">
 							<div>

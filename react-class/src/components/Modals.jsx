@@ -14,3 +14,5 @@ export const Modals = ({ open, onClose, children }) => {
     </div>
   );
 }
+
+

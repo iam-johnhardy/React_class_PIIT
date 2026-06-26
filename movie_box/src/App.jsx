@@ -1,26 +1,23 @@
-import Video_player from "./component/video_player"
+import Vide from "./component/video_player"
 
 function App() {
 
   return (
    <div className="">
-    <Video_player/>
-    <Video_player/>
-    <Video_player/>
-     <Video_player display='nice and good looking video display'/>
-    <Video_player />
-    <Video_player display= 'This is our first React code'/>
-    <Text display= 'This is our first React code'/>
-
-    
+    <Vide/>
+    <Vide/>
+    <Text name='john'/>
+    <Text name='mary'/>
    </div>
   )
 }
 
 export default App
 
-function Text({display}) {
+function Text({name}) {
+    // const name = prompt('who are you');
     return <div>
-        <h2>{display}</h2>
+
+        <h2>My is {name}. welcome back</h2>
     </div>
 }
